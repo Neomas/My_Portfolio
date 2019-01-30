@@ -2,7 +2,7 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/screensaver2.gif);
-$background-opacity: 0.2;
+//$background-opacity: 0.2;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
