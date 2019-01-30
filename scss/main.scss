@@ -29,7 +29,9 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    text-transform: uppercase;
+    font-family: "Roboto";
+    //background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -179,6 +181,7 @@ main {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
+  opacity: 0.5;
   color: set-text-color($primary-color);
   height: 60px;
 }
