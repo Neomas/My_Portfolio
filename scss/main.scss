@@ -50,23 +50,25 @@ header {
   color: $secondary-color;
 }
 
+.icons {
+  margin-top: 35px;
+  margin-left: 35px;
+  position: fixed;
+
+  a {
+    padding: 0.4rem;
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
 main {
   padding: 4rem;
   //height: 100%;
   min-height: calc(100vh - 60px);
-
-  .icons {
-    margin-top: 1rem;
-
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
-    }
-  }
 
   &#home {
     overflow: hidden;
@@ -75,6 +77,7 @@ main {
     }
   }
 }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
