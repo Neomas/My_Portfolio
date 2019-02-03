@@ -5,6 +5,7 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
+
   @include easeOut;
 
   .btn-line {
@@ -21,6 +22,7 @@
     transform: rotate(180deg);
 
     .btn-line {
+      background-color: $secondary-color;
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -78,6 +80,7 @@
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
+
     @include easeOut;
 
     &.show {
@@ -88,9 +91,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait.png");
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      background-color: $secondary-color;
     }
   }
 

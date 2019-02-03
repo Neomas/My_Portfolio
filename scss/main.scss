@@ -11,7 +11,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
 }
 
@@ -23,16 +23,25 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    margin-top: 20vh;
+    font-size: 10vw;
+    text-transform: uppercase;
   }
 
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    text-transform: uppercase;
-    font-family: "Roboto";
-    //background: rgba(lighten($primary-color, 2), 0.5);
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+    background: $secondary-color;
   }
+}
+h6 {
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+h2 {
+  text-align: right;
 }
 
 a {
@@ -93,7 +102,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    //border: $secondary-color 3px solid;
   }
   .bio {
     grid-area: bio;
@@ -109,7 +118,7 @@ main {
     grid-area: job3;
   }
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($primary-color, 10);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
@@ -137,19 +146,20 @@ main {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin: 1rem 20vw;
 
   div {
     font-size: 2rem;
-    border: 3px #ffffff solid;
-    padding: 1.5rem 2.5rem;
+    text-align: center;
+    border: 3px $secondary-color solid;
+    padding: 1.5rem 1.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 0.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
@@ -165,6 +175,7 @@ main {
   padding: 0.5rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
 
   &:hover {
     background: $secondary-color;
