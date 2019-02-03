@@ -102,6 +102,19 @@ body {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5; }
+  body#bg-img {
+    background: url(/..img/coming_soon.png);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #2b2d46; }
 
 h1,
 h2,
