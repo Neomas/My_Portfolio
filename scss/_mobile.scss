@@ -68,7 +68,14 @@
   main#home h1 {
     margin-top: 10vh;
   }
+
   .projects {
     grid-template-columns: 1fr;
+  }
+  //Contact
+  .boxes {
+    div {
+      font-size: 5vw;
+    }
   }
 }
